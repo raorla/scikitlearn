@@ -1,0 +1,25 @@
+{
+  "description": "My iExec resource description, must be at least 150 chars long in order to pass the validation checks. Describe your application, dataset or workerpool to your users",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {},
+  "app": {
+    "owner": "0xB0b552107C14A5e4BCf20f359DeF23Ac6003Abde",
+    "name": "scikitlearn",
+    "type": "DOCKER",
+    "multiaddr": "docker.io/raorla/tee-scikitlearn:1.0.0-debug",
+    "checksum": "0xa8a06c4fb3c27306d6358278bb806254489abad5bca45c1f736aba03b6b94a7b",
+    "mrenclave": {
+      "framework": "SCONE",
+      "version": "v5.9",
+      "entrypoint": "/root/.local/share/mamba/bin/python3 /app/app.py",
+      "heapSize": 4294967296,
+      "fingerprint": "de71f35f7f3ee4b735c4fa4a29436b4cdfbde51fc79e13cc0a05e02f7da71d49"
+    }
+  }
+}

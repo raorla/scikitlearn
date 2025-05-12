@@ -1,0 +1,65 @@
+Redirection de stdout et stderr vers les fichiers logs réussie.
+--- Début du script app.py (logs redirigés) --- Timestamp: 2025-05-12T11:57:27.225031 ---
+Répertoire IEXEC_OUT (utilisé): /iexec_out
+Valeur de OPENBLAS_NUM_THREADS: non définie
+Valeur de MKL_NUM_THREADS: non définie
+Valeur de OMP_NUM_THREADS: non définie
+Valeur de MPLCONFIGDIR: non définie
+Valeur de HOME: /root
+Importation des bibliothèques...
+Bibliothèques importées avec succès.
+Version de scikit-learn: 1.6.1
+Version de matplotlib: 3.9.4
+Version de numpy: 2.0.2
+Définition des classifieurs et des jeux de données...
+Classifieurs et jeux de données définis.
+Démarrage de la logique de création des graphiques...
+Traitement du jeu de données 1/3
+  Itération sur 10 classifieurs pour le jeu de données 1...
+    Classifieur 1/10: Nearest Neighbors
+    Classifieur 2/10: Linear SVM
+    Classifieur 3/10: RBF SVM
+    Classifieur 4/10: Gaussian Process
+    Classifieur 5/10: Decision Tree
+    Classifieur 6/10: Random Forest
+    Classifieur 7/10: Neural Net
+    Classifieur 8/10: AdaBoost
+    Classifieur 9/10: Naive Bayes
+    Classifieur 10/10: QDA
+Traitement du jeu de données 2/3
+  Itération sur 10 classifieurs pour le jeu de données 2...
+    Classifieur 1/10: Nearest Neighbors
+    Classifieur 2/10: Linear SVM
+    Classifieur 3/10: RBF SVM
+    Classifieur 4/10: Gaussian Process
+    Classifieur 5/10: Decision Tree
+    Classifieur 6/10: Random Forest
+    Classifieur 7/10: Neural Net
+    Classifieur 8/10: AdaBoost
+    Classifieur 9/10: Naive Bayes
+    Classifieur 10/10: QDA
+Traitement du jeu de données 3/3
+  Itération sur 10 classifieurs pour le jeu de données 3...
+    Classifieur 1/10: Nearest Neighbors
+    Classifieur 2/10: Linear SVM
+    Classifieur 3/10: RBF SVM
+    Classifieur 4/10: Gaussian Process
+    Classifieur 5/10: Decision Tree
+    Classifieur 6/10: Random Forest
+    Classifieur 7/10: Neural Net
+    Classifieur 8/10: AdaBoost
+    Classifieur 9/10: Naive Bayes
+    Classifieur 10/10: QDA
+Logique de création des graphiques terminée.
+Préparation de la sauvegarde du graphique final dans : /iexec_out/result.pdf
+Graphique sauvegardé avec succès dans : /iexec_out/result.pdf
+Préparation de l'écriture de /iexec_out/computed.json avec le contenu : {"deterministic-output-path": "/iexec_out/result.pdf"}
+Confirmation : Le fichier de sortie déterministe '/iexec_out/result.pdf' existe.
+Fichier /iexec_out/computed.json écrit avec succès.
+Vérification finale du contenu du répertoire '/iexec_out':
+Contenu de '/iexec_out':
+  - app_stderr.log (taille: 0 octets)
+  - app_stdout.log (taille: 65 octets)
+  - result.pdf (taille: 490447 octets)
+  - computed.json (taille: 54 octets)
+--- Fin du script app.py (logs redirigés) --- Timestamp: 2025-05-12T11:57:36.418976 ---
