@@ -144,8 +144,11 @@ for ds_cnt, ds in enumerate(datasets):
         i += 1
 
 plt.tight_layout()
-plt.savefig(fname="/iexec_out/result.pdf")
+plt.savefig(fname="/iexec_out/result.pdf") # Vous sauvegardez un fichier nommé result.pdf
 
 # Declare everything is computed
-with open(iexec_out + '/computed.json', 'w+') as f:
-    json.dump({ "deterministic-output-path" : iexec_out + '/result.txt' }, f)
+# Assurez-vous que la variable 'iexec_out' contient bien "/iexec_out"
+# (ce qui devrait être le cas grâce à os.environ['IEXEC_OUT'] sur iExec et dans votre test local)
+with open(os.path.join(iexec_out, 'computed.json'), 'w+') as f: # os.path.join est plus sûr pour construire les chemins
+    # Et ici, vous devez pointer vers le fichier PDF que vous avez réellement créé
+    json.dump({ "deterministic-output-path" : os.path.join(iexec_out, 'result.pdf') }, f)
