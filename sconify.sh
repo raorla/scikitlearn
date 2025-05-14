@@ -22,17 +22,15 @@ docker run -it \
             --host-path=/etc/hosts \
             --host-path=/etc/resolv.conf \
             --host-path=/tmp \
-            --host-path=/iexec_in \
-            --host-path=/iexec_out \
             --host-path=/etc/passwd \
             --host-path=/etc/group \
             --binary=/root/.local/share/mamba/bin/python3  \
-            --heap=4G \
+            --heap=1G \
             --dlopen=1 \
             --no-color \
             --verbose \
             --env HOME=/root \
-            --env MPLCONFIGDIR=/tmp \
+            --env TMPDIR=/tmp \
             --command="${ENTRYPOINT}" \
             && echo -e "\n------------------\n" \
             && echo "successfully built TEE docker image => ${IMG_TO}" \
